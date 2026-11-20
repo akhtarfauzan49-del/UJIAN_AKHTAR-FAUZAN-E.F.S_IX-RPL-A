@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Peminjaman</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="mt-3 mx-6">
+        <nav class="flex justify-between bg-blue-900 px-10 py-4 rounded-md text-gray-100">
+            <div class="text-lg font-mono px-5">
+                <h1>Peminjaman Alat Sekolah</h1>
+            </div>
+
+            <div class="flex gap-5 font-mono mr-15 items-center">
+                <a href="alat.html#" class="hover:bg-blue-700 px-2 py-1 rounded-md">Dasboard</a>
+                <a href="form.html#" class="hover:bg-blue-700 px-2 py-1 rounded-md">Peminjaman</a>
+                <a href="daftar.html#" class="hover:bg-blue-700 px-2 py-1 rounded-md">Status</a>
+                <a href="edit.html" class="hover:bg-blue-700 px-2 py-1 rounded-md">Edit</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="font-mono text-lg mt-6 ml-9 mb-5">
+                <h2></h2>
+            </div>
+
+            <div class="ml-8 bg-slate-300 rounded-md mr-8 py-2 shadow-lg">
+                <table class="w-full border-collapse font-mono" id="tabel-status">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Peminjam</th>
+                            <th>Kelas</th>
+                            <th>Tanggal Pinjam</th>
+                            <th>Tanggal Kembali</th>
+                            <th>Jumlah</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-status">
+                        <!-- Data dari database akan masuk di sini -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="mt-88 mx-6 mb-6">
+            <div class="bg-blue-900 text-gray-100 rounded-md px-10 py-4 font-mono text-center shadow-lg">
+                <p class="font-bold text-base mb-1">Peminjaman Alat Sekolah</p>
+                <p class="text-sm text-gray-300 mb-2">Sistem informasi pencatatan dan pengelolaan peminjaman alat sekolah.</p>
+                <small class="text-xs text-gray-400">&copy; 2026 Akhtar Fauzan</small>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>

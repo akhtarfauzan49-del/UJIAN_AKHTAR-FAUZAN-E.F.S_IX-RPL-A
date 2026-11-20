@@ -1,0 +1,101 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM PEMINJAMAN</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="mt-3 mx-6">
+        <nav class="flex justify-between bg-blue-900 px-10 py-4 rounded-md text-gray-100">
+            <div class="text-lg font-mono px-5">
+                <h1>Peminjaman Alat Sekolah</h1>
+            </div>
+
+            <div class="flex gap-5 font-mono mr-15 items-center">
+                <a href="alat.html#" class="hover:bg-blue-700 px-2 py-1 rounded-md">Dasboard</a>
+                <a href="form.html#" class="hover:bg-blue-700 px-2 py-1 rounded-md">Peminjaman</a>
+                <a href="daftar.html#" class="hover:bg-blue-700 px-2 py-1 rounded-md">Status</a>
+                <a href="edit.html" class="hover:bg-blue-700 px-2 py-1 rounded-md">Edit</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="font-mono text-lg mt-6 ml-9 mb-5">
+                <h2 class="">Daftar Alat Yang Tersedia</h2>
+            </div>
+
+
+            <div class="ml-8 mr-8 bg-slate-300 rounded-md py-2 shadow-lg overflow-x-auto">
+                <table class="w-full border-collapse font-mono">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Alat</th>
+                            <th>Kategori</th>
+                            <th>Stok</th>
+                            <th>Lokasi</th>
+                            <th>Kondisi</th>
+                            <th>Pinjam</th>
+                        </tr>
+                    </thead>
+            </div>
+
+
+            <tbody id="data-alat">
+            </tbody>
+            </table>
+        </section>
+
+        <section class="bg-gray-200 flex flex-col items-center mt-10 mb-5 rounded-lg ">
+            <div>
+                <h1>Selamat Datang</h1>
+                <p>Form Edit</p>
+            </div>
+
+            <form id="form-pinjam">
+
+                <div>
+                    <label for="nama_peminjam">Nama Alat:</label>
+                    <input type="text" id="nama_alat" name="nama_peminjam" required>
+                </div>
+
+                <div>
+                    <label for="nama_peminjam">Nama Kategori:</label>
+                    <input type="text" id="nama_alat" name="nama_peminjam" required>
+                </div>
+
+
+                <div>
+                    <label for="kelas">Kondisi :</label>
+                    <input type="text" id="Kondisi" name="kelas" required>
+                </div>
+
+
+                <div>
+                    <label>Stok:</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label for="jumlah">Lokasi:</label>
+                    <input type="text" id="lokasi">
+                </div>
+
+
+                <footer class=" mx-6 mb-6">
+                    <div class="bg-blue-900 text-gray-100 rounded-md px-10 py-4 font-mono text-center shadow-lg">
+                        <p class="font-bold text-base mb-1">Peminjaman Alat Sekolah</p>
+                        <p class="text-sm text-gray-300 mb-2">Sistem informasi pencatatan dan pengelolaan peminjaman
+                            alat
+                            sekolah.</p>
+                        <small class="text-xs text-gray-400">&copy; 2026 Akhtar Fauzan</small>
+                    </div>
+                </footer>
+    </main>
+</body>
+
+</html>
